@@ -1,0 +1,18 @@
+{
+  "python.pythonPath": "/Users/mugil/.pyenv/versions/dsa-practice/bin/python",
+
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+
+  "files.associations": {
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  }
+}
