@@ -2,16 +2,18 @@
 
 ## Java, Python, & C++
 
-### Java
+### Usage
+
+> Java
 
 - Open in IntelliJ
 
-### Python
+> Python
 
 - Make a virtual environment
 - Install the packages using poetry or requirements.txt (use Makefile to generate it)
 
-### C++
+> C++
 
 - Open in CLion
 - use CMakeLists.txt
