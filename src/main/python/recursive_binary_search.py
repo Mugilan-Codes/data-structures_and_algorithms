@@ -1,3 +1,8 @@
+# Python (recursion depth) prefers iterative approach instead of recursive because of higher space complexity
+# Time Complexity - O(log n) (or) logorithmic runtime
+# Space Complexity - O(log n) (or) logorithmic space
+
+
 def recursive_binary_search(list, target):
     if len(list) == 0:
         return False
@@ -17,7 +22,7 @@ def verify(result):
     print(f"Target Found: {result}")
 
 
-numbers = [i for i in range(1, 8)]
+numbers = [i for i in range(1, 9)]
 
 result = recursive_binary_search(numbers, 12)
 verify(result)

@@ -1,4 +1,6 @@
 # REF: Binary Search Implementations - https://teamtreehouse.com/library/introduction-to-algorithms/algorithms-in-code/binary-search-implementations
+# Time Complexity - O(log n) (or) logorithmic runtime
+# Space Complexity - O(1) (or) constant space
 
 
 def binary_search(list, target):
@@ -27,7 +29,7 @@ def verify(index):
 
 # TODO: values must be sorted
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers = [i for i in range(1, 10)]
+numbers = [i for i in range(1, 11)]
 
 result = binary_search(numbers, 12)
 verify(result)
