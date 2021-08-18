@@ -2,6 +2,13 @@
 
 - [Algorithms and Data Structures - Full Course for Beginners from Treehouse](https://youtu.be/8hly31xKli0)
 
+> how to define and implement algorithm?
+
+- The steps in the algorithm needs to be in a very specific order
+- The steps also needs to be distinct
+- The algorithm should produce a result
+- The algorithm should complete in a finite amount of time
+
 ## Big O (Upper Bounds of an algorithm)
 
 > It is the theoretical definition of the complexity of an algorithm as a function of the size.
