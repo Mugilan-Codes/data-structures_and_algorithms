@@ -1,6 +1,18 @@
 # Data Structures and Algorithm Practice
 
-## Java, Python, & C++
+## Java, Python, C++, and JavaScript
+
+### Index
+
+#### Algorithms
+
+##### Searching
+
+|     Algorithm      |                              Java                              |                              Python                              |  C++  | JavaScript |
+| :----------------: | :------------------------------------------------------------: | :--------------------------------------------------------------: | :---: | :--------: |
+|       Linear       |     [:white_check_mark:](src/main/java/LinearSearch.java)      |      [:white_check_mark:](src/main/python/linear_search.py)      |       |            |
+| Binary - Iterative |     [:white_check_mark:](src/main/java/BinarySearch.java)      |      [:white_check_mark:](src/main/python/binary_search.py)      |       |            |
+| Binary - Recursive | [:white_check_mark:](src/main/java/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/recursive_binary_search.py) |       |            |
 
 ### Useful Repositories
 
