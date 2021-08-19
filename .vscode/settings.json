@@ -14,5 +14,9 @@
 
   "files.associations": {
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+
+  "code-runner.executorMap": {
+    "javascript": "/Users/mugil/.nvm/versions/node/v14.16.1/bin/node"
   }
 }

@@ -2,11 +2,22 @@
 
 ## Java, Python, C++, and JavaScript
 
+### Usage
+
+|  Language  | How to Run                                       |
+| :--------: | :----------------------------------------------- |
+|    Java    | `IntelliJ IDE`                                   |
+|   Python   | `CodeRunner` Extension in `VSCode`               |
+|    C++     | `CLion IDE`                                      |
+| JavaScript | `Quokka.js` / `CodeRunner` Extension in `VSCode` |
+
+**_NOTE_**: This is how i run them
+
 ### Index
 
 #### Algorithms
 
-##### Searching
+- ##### Searching
 
 |     Algorithm      |                              Java                              |                              Python                              |  C++  | JavaScript |
 | :----------------: | :------------------------------------------------------------: | :--------------------------------------------------------------: | :---: | :--------: |
