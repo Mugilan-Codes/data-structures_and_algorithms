@@ -60,6 +60,7 @@
 - [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) - 🎆 Interactive Online Platform that Visualizes Algorithms from Code
 - [Awesome Algorithms](https://github.com/tayllan/awesome-algorithms) - A curated list of awesome places to learn and/or practice algorithms.
 - [Awesome Competitive Programming](https://github.com/lnishan/awesome-competitive-programming) - 💎 A curated list of awesome Competitive Programming, Algorithm and Data Structure resources
+- [SDE-Interview-Questions](https://github.com/twowaits/SDE-Interview-Questions) - Most comprehensive list 📋 of tech interview questions 📘 of companies scraped from Geeksforgeeks, CareerCup and Glassdoor.
 - [Algo Deck](https://github.com/teivah/algodeck) - An Open-Source Collection of 200+ Algorithmic Flash Cards to Help you Preparing your Algorithm & Data Structure Interview 💯
 - [Algorithms explanation](https://github.com/TheAlgorithms/Algorithms-Explanation) - Popular algorithms explained in simple language with examples and links to their implementation in various programming languages and other required resources. [English](https://github.com/TheAlgorithms/Algorithms-Explanation/tree/master/en)
 - [Amazon-SDE-Test-Series](https://github.com/FazeelUsmani/Amazon-SDE-Test-Series) - Interview preparation questions for Amazon SDE role
