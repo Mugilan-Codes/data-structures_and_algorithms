@@ -52,3 +52,15 @@
 - Search for an arbitrary value
 - Insert values at any point into the structure
 - Delete values in the structure
+
+#### Linked List
+
+> Linked list can be a better tool than array if there is more inserts and deletes than accessing.
+>
+> It is a linear data structure where an element is stored in a separate object called a `Node` (Self Referential Objects)
+>
+> Node contains two information: the data value and a reference to the next node in the list. The first node is called `Head` and last node is called `Tail`
+
+- There are two types
+  - Singly Linked List
+  - Doubly Linked List
