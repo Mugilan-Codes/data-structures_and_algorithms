@@ -1,4 +1,5 @@
 function linearSearch(array, key) {
+  // loops through the entire array and finds the first instance of the key
   for (let i = 0; i < array.length; i++) {
     if (array[i] === key) {
       return i;
