@@ -8,7 +8,7 @@ function binarySearch(array, target) {
   while (left <= right) {
     // find the mid point in the array
     // console.log(Math.floor((left + right) / 2));
-    const mid = left + Math.floor((right - left) / 2);
+    const mid = left + Math.floor((right - left) / 2); // avoids overflow
 
     // return index if the mid is the target
     if (array[mid] === target) {
