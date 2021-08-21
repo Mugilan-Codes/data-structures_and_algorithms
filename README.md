@@ -19,11 +19,11 @@
 
 - ##### Searching
 
-  |     Algorithm      |                              Java                              |                              Python                              |  C++  |                                             JavaScript                                             |
-  | :----------------: | :------------------------------------------------------------: | :--------------------------------------------------------------: | :---: | :------------------------------------------------------------------------------------------------: |
-  |       Linear       |     [:white_check_mark:](src/main/java/LinearSearch.java)      |      [:white_check_mark:](src/main/python/linear_search.py)      |       |               [:white_check_mark:](src/main/javascript/algo/search/linear_search.js)               |
-  | Binary - Iterative |     [:white_check_mark:](src/main/java/BinarySearch.java)      |      [:white_check_mark:](src/main/python/binary_search.py)      |       |               [:white_check_mark:](src/main/javascript/algo/search/binary_search.js)               |
-  | Binary - Recursive | [:white_check_mark:](src/main/java/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/recursive_binary_search.py) |       | [:white_check_mark:](src/main/javascript/algo/search/recursive_binary_search.js){:target="_blank"} |
+  |     Algorithm      |                              Java                              |                              Python                              |  C++  |                                    JavaScript                                    |
+  | :----------------: | :------------------------------------------------------------: | :--------------------------------------------------------------: | :---: | :------------------------------------------------------------------------------: |
+  |       Linear       |     [:white_check_mark:](src/main/java/LinearSearch.java)      |      [:white_check_mark:](src/main/python/linear_search.py)      |       |      [:white_check_mark:](src/main/javascript/algo/search/linear_search.js)      |
+  | Binary - Iterative |     [:white_check_mark:](src/main/java/BinarySearch.java)      |      [:white_check_mark:](src/main/python/binary_search.py)      |       |      [:white_check_mark:](src/main/javascript/algo/search/binary_search.js)      |
+  | Binary - Recursive | [:white_check_mark:](src/main/java/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/recursive_binary_search.py) |       | [:white_check_mark:](src/main/javascript/algo/search/recursive_binary_search.js) |
 
 ### Useful Repositories
 
