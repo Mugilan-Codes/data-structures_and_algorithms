@@ -19,11 +19,11 @@
 
 - ##### Searching
 
-|     Algorithm      |                              Java                              |                              Python                              |  C++  | JavaScript |
-| :----------------: | :------------------------------------------------------------: | :--------------------------------------------------------------: | :---: | :--------: |
-|       Linear       |     [:white_check_mark:](src/main/java/LinearSearch.java)      |      [:white_check_mark:](src/main/python/linear_search.py)      |       |            |
-| Binary - Iterative |     [:white_check_mark:](src/main/java/BinarySearch.java)      |      [:white_check_mark:](src/main/python/binary_search.py)      |       |            |
-| Binary - Recursive | [:white_check_mark:](src/main/java/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/recursive_binary_search.py) |       |            |
+  |     Algorithm      |                              Java                              |                              Python                              |  C++  | JavaScript |
+  | :----------------: | :------------------------------------------------------------: | :--------------------------------------------------------------: | :---: | :--------: |
+  |       Linear       |     [:white_check_mark:](src/main/java/LinearSearch.java)      |      [:white_check_mark:](src/main/python/linear_search.py)      |       |            |
+  | Binary - Iterative |     [:white_check_mark:](src/main/java/BinarySearch.java)      |      [:white_check_mark:](src/main/python/binary_search.py)      |       |            |
+  | Binary - Recursive | [:white_check_mark:](src/main/java/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/recursive_binary_search.py) |       |            |
 
 ### Useful Repositories
 
@@ -37,6 +37,7 @@
 - [Algorithms & data structures project](https://github.com/williamfiset/Algorithms) - A collection of algorithms and data structures
 - [Java : Algorithms and Data Structure](https://github.com/phishman3579/java-algorithms-implementation) - Algorithms and Data Structures implemented in Java
 - [Java Algorithms Implementation](https://github.com/lifeparticle/Java-Algorithms-Implementation) - ☕ Java Algorithms Implementation
+- [Algorithms and Data Structures](https://github.com/neerajjain92/data-structures) - Implementation of Algorithms and Data Structures, Problems and Solutions
 
 #### Python
 
