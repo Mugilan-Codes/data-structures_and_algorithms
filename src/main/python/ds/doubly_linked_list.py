@@ -124,6 +124,7 @@ class DoublyLinkedList:
 
         return current
 
+    # TODO: insert at the end of the list
     def insert(self, data, index):
         """
         Inserts a new `Node` containing data at any index position
@@ -133,6 +134,9 @@ class DoublyLinkedList:
 
         Overall Takes O(n) time or Linear Time
         """
+
+        if index > self.__count:
+            raise IndexError("index out of range")
 
         if index == 0:
             self.add(data)
@@ -149,6 +153,49 @@ class DoublyLinkedList:
             prev_node.next_node = new_node
 
         self.__count += 1
+
+    def remove(self, key):
+        """
+        Removes data that matches the key
+        Return the removed node or `None` if the key doesn't exist
+        Takes O(n) time or Linear Time
+        """
+
+        current = self.head
+        found = False
+
+        # loop while current != None and found == False
+        while current and not found:
+            if current.data == key and current is self.head:
+                found = True
+
+                self.head = current.next_node
+                # if the list is not empty assign prev_node to None.
+                # (i.e.) if self.head is not None
+                if self.head:
+                    self.head.prev_node = None
+
+                self.__count -= 1
+                return current
+            elif current.data == key:
+                found = True
+
+                # get previous and next node of the node to be deleted
+                prev_node = current.prev_node
+                next_node = current.next_node
+
+                # reassign it
+                prev_node.next_node = next_node
+                # if the removed node is not the tail node
+                if next_node:
+                    next_node.prev_node = prev_node
+
+                self.__count -= 1
+                return current
+            else:
+                current = current.next_node
+
+        return None
 
 
 def test_doubly_linked_list():
