@@ -126,10 +126,11 @@ class LinkedList:
         Overall Takes O(n) time or Linear Time
         """
 
-        # error if the size of the array
-        if index >= self.__count:
+        # error if the size of the array is less than the given index
+        if index > self.__count:
             raise IndexError("index out of range")
 
+        # insert at the head position
         if index == 0:
             self.add(data)
             return
@@ -154,3 +155,46 @@ class LinkedList:
             new.next_node = next_node
 
         self.__count += 1
+
+    def remove(self, key):
+        """
+        Removes data that matches the key
+        Return the removed node or `None` if the key doesn't exist
+        Takes O(n) time or Linear Time
+        """
+
+        current = self.head
+        prev_node = None
+        found = False
+
+        # loop while current != None and found == False
+        while current and not found:
+            if current.data == key:
+                found = True
+
+                if current is self.head:
+                    self.head = current.next_node
+                else:
+                    prev_node.next_node = current.next_node
+
+                self.__count -= 1
+                return current
+            
+            prev_node = current
+            current = current.next_node
+
+            # if current.data == key and current is self.head:
+            #     found = True
+            #     self.head = current.next_node
+            #     self.__count -= 1
+            #     return current
+            # elif current.data == key:
+            #     found = True
+            #     prev_node.next_node = current.next_node
+            #     self.__count -= 1
+            #     return current
+            # else:
+            #     prev_node = current
+            #     current = current.next_node
+
+        return None
