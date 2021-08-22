@@ -24,12 +24,10 @@ class Node:
         return f"<Node data: {self.data}>"
 
 
-class LinkedList:
+class SinglyLinkedList:
     """
-    Singly Linked List
-
-    Linear data structure that stores values in nodes. 
-    The list maintains a reference to the first node, also called head. 
+    Linear data structure that stores values in nodes.
+    The list maintains a reference to the first node, also called head.
     Each node points to the next node in the list
 
     Attributes:
@@ -215,3 +213,36 @@ class LinkedList:
             current = current.next_node
 
         return None
+
+    def remove_at_index(self, index):
+        """
+        Removes node at specified index
+        Takes O(n) time or Linear Time
+        """
+
+        if index >= self.__count:
+            raise IndexError("index out of range")
+
+        current = self.head
+
+        if index == 0:
+            self.head = current.next_node
+            self.__count -= 1
+            return current
+
+        position = index
+
+        # find the ( given index - 1 ) position's node
+        while position > 1:
+            current = current.next_node
+            position -= 1
+
+        prev_node = current
+        current = current.next_node  # the node to be removed
+        next_node = current.next_node
+
+        # linking the remaining nodes after remove
+        prev_node.next_node = next_node
+        self.__count -= 1
+
+        return current

@@ -27,9 +27,9 @@
 
 #### Data Structures
 
-|             | Java  |                         Python                          |  C++  | JavaScript |
-| :---------: | :---: | :-----------------------------------------------------: | :---: | :--------: |
-| Linked List |       | [:white_check_mark:](src/main/python/ds/linked_list.py) |       |            |
+|                    | Java  |                             Python                             |  C++  | JavaScript |
+| :----------------: | :---: | :------------------------------------------------------------: | :---: | :--------: |
+| Singly Linked List |       | [:white_check_mark:](src/main/python/ds/singly_linked_list.py) |       |            |
 
 ### Useful Repositories
 
