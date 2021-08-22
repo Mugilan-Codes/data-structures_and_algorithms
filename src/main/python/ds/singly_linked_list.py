@@ -246,3 +246,46 @@ class SinglyLinkedList:
         self.__count -= 1
 
         return current
+
+
+# TODO: display keys that are being searched even when it is not found
+def verify_search(value):
+    if value is None:
+        print("Key not found")
+    else:
+        print(f"Key Found: {value}")
+
+
+def test_singly_linked_list():
+    l = SinglyLinkedList()
+
+    print(l.is_empty())
+
+    l.add(10)
+    l.add(20)
+    l.add(30)
+    l.add(40)
+    l.add(50)
+    l.add(70)
+
+    print(len(l))
+    print(l.size())
+    print(l)
+
+    verify_search(l.search(60))
+    verify_search(l.search(50))
+
+    l.insert(60, 1)
+    print(l)
+
+    print(l.node_at_index(5))
+
+    print(l.remove(80))
+    print(l.remove(30))
+
+    print(l.remove_at_index(4))
+
+    print(l)
+
+
+test_singly_linked_list()
