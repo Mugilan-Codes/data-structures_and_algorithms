@@ -197,6 +197,38 @@ class DoublyLinkedList:
 
         return None
 
+    def remove_at_index(self, index):
+        """
+        Removes node at specified index
+        Takes O(n) time or Linear Time
+        """
+
+        if index >= self.__count:
+            raise IndexError("index out of range")
+
+        current = self.head
+
+        if index == 0:
+            self.head = current.next_node
+
+            if self.head:
+                self.head.prev_node = None
+
+            self.__count -= 1
+            return current
+
+        current = self.node_at_index(index)
+
+        prev_node = current.prev_node
+        next_node = current.next_node
+
+        prev_node.next_node = next_node
+        if next_node:
+            next_node.prev_node = prev_node
+
+        self.__count -= 1
+        return current
+
 
 def test_doubly_linked_list():
     dl = DoublyLinkedList()
