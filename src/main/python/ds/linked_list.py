@@ -27,6 +27,13 @@ class Node:
 class LinkedList:
     """
     Singly Linked List
+
+    Linear data structure that stores values in nodes. 
+    The list maintains a reference to the first node, also called head. 
+    Each node points to the next node in the list
+
+    Attributes:
+        head: The head node of the list
     """
 
     def __init__(self):
@@ -111,14 +118,14 @@ class LinkedList:
         while current:
             if current.data == key:
                 return current
-            else:
-                current = current.next_node
 
-        return None
+            current = current.next_node
+
+        return None  # TODO: return a string
 
     def insert(self, data, index):
         """
-        Inserts a new `Node` containing data at index position
+        Inserts a new `Node` containing data at any index position
 
         Insertion Takes O(1) time or Constant Time
         Finding the node at insertion point Takes O(n) time or Linear Time
@@ -156,6 +163,28 @@ class LinkedList:
 
         self.__count += 1
 
+    def node_at_index(self, index):
+        """
+        Returns the node at specified index
+        Takes O(n) time or Linear Time
+        """
+
+        if index >= self.__count:
+            raise IndexError("index out of range")
+
+        if index == 0:
+            return self.head
+
+        current = self.head
+        position = 0
+
+        # loops through to the index position
+        while position < index:
+            current = current.next_node
+            position += 1
+
+        return current
+
     def remove(self, key):
         """
         Removes data that matches the key
@@ -172,6 +201,7 @@ class LinkedList:
             if current.data == key:
                 found = True
 
+                # check if the key is found at the head
                 if current is self.head:
                     self.head = current.next_node
                 else:
@@ -179,22 +209,9 @@ class LinkedList:
 
                 self.__count -= 1
                 return current
-            
+
+            # prepare for next loop
             prev_node = current
             current = current.next_node
-
-            # if current.data == key and current is self.head:
-            #     found = True
-            #     self.head = current.next_node
-            #     self.__count -= 1
-            #     return current
-            # elif current.data == key:
-            #     found = True
-            #     prev_node.next_node = current.next_node
-            #     self.__count -= 1
-            #     return current
-            # else:
-            #     prev_node = current
-            #     current = current.next_node
 
         return None
