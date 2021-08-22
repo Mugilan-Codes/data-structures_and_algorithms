@@ -24,6 +24,8 @@ class Node:
 
 
 # TODO: track tail node of the list
+# REF: Linked Lists in Python: An Introduction - https://realpython.com/linked-lists-python/
+# TODO: add node to the tail
 class DoublyLinkedList:
     """
     Attributes:
@@ -234,6 +236,27 @@ def test_doubly_linked_list():
     dl = DoublyLinkedList()
 
     print(dl.is_empty())
+    print(len(dl))
+
+    dl.add(10)
+    dl.add(20)
+    dl.add(30)
+
+    print(dl.is_empty())
+    print(len(dl))
+
+    print(dl)
+
+    print(dl.search(40))
+    print(dl.search(20))
+
+    print(dl.node_at_index(2))
+
+    print(dl.remove(10))
+    print(dl)
+
+    print(dl.remove_at_index(1))
+    print(dl)
 
 
-# test_doubly_linked_list()
+test_doubly_linked_list()
