@@ -119,10 +119,36 @@ class DoublyLinkedList:
         position = 0
 
         while position < index:
-            current = current.data
+            current = current.next_node
             position += 1
 
         return current
+
+    def insert(self, data, index):
+        """
+        Inserts a new `Node` containing data at any index position
+
+        Insertion Takes O(1) time or Constant Time
+        Finding the node at insertion point Takes O(n) time or Linear Time
+
+        Overall Takes O(n) time or Linear Time
+        """
+
+        if index == 0:
+            self.add(data)
+            return
+
+        # re reference new node between the node at the given index and it's previous node
+        if index > 0:
+            current_node = self.node_at_index(index)
+            prev_node = current_node.prev_node
+
+            new_node = Node(data, prev_node=prev_node, next_node=current_node)
+
+            current_node.prev_node = new_node
+            prev_node.next_node = new_node
+
+        self.__count += 1
 
 
 def test_doubly_linked_list():
