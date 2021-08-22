@@ -19,11 +19,17 @@
 
 - ##### Searching
 
-  |     Algorithm      |                                    Java                                    |                                    Python                                    |  C++  |                                    JavaScript                                    |
+  |                    |                                    Java                                    |                                    Python                                    |  C++  |                                    JavaScript                                    |
   | :----------------: | :------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :---: | :------------------------------------------------------------------------------: |
   |       Linear       |     [:white_check_mark:](src/main/java/algo/search/LinearSearch.java)      |      [:white_check_mark:](src/main/python/algo/search/linear_search.py)      |       |      [:white_check_mark:](src/main/javascript/algo/search/linear_search.js)      |
   | Binary - Iterative |     [:white_check_mark:](src/main/java/algo/search/BinarySearch.java)      |      [:white_check_mark:](src/main/python/algo/search/binary_search.py)      |       |      [:white_check_mark:](src/main/javascript/algo/search/binary_search.js)      |
   | Binary - Recursive | [:white_check_mark:](src/main/java/algo/search/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/algo/search/recursive_binary_search.py) |       | [:white_check_mark:](src/main/javascript/algo/search/recursive_binary_search.js) |
+
+#### Data Structures
+
+|             | Java  |                         Python                          |  C++  | JavaScript |
+| :---------: | :---: | :-----------------------------------------------------: | :---: | :--------: |
+| Linked List |       | [:white_check_mark:](src/main/python/ds/linked_list.py) |       |            |
 
 ### Useful Repositories
 
