@@ -42,12 +42,34 @@ public class SinglyLinkedList {
         return sizeOfList == 0;
     }
 
-    // Adds new node containing data at the head of the list.
+    // Adds new node containing data at the `head` of the list.
     // Takes O(1) time or Constant Time
     public void add(int data) {
         Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
+        sizeOfList++;
+    }
+
+    // Add new node containing data at the `tail` of the list
+    // Takes O(n) time or Linear Time
+    public void addLast(int data) {
+        // add to head if the list is empty
+        if (isEmpty()) {
+            add(data);
+            return;
+        }
+
+        Node newNode = new Node(data);
+        Node current = head;
+
+        // loop until the tail node is reached
+        while (current.next != null) {
+            current = current.next;
+        }
+
+        // assign tail node to be the new node
+        current.next = newNode;
         sizeOfList++;
     }
 
@@ -91,6 +113,10 @@ class TestSinglyLinkedList {
 
         System.out.println(l.size());
         System.out.println(l.isEmpty());
+        l.display();
+
+        l.addLast(10);
+        l.display();
 
         l.add(1);
         l.add(2);
@@ -101,6 +127,9 @@ class TestSinglyLinkedList {
         System.out.println(l.isEmpty());
 
         System.out.println(l);
+        l.display();
+
+        l.addLast(5);
         l.display();
 
     }
