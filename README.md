@@ -29,10 +29,10 @@
 
 - ##### Linked List
 
-  |        | Java  |                             Python                             |  C++  | JavaScript |
-  | :----: | :---: | :------------------------------------------------------------: | :---: | :--------: |
-  | Singly |       | [:white_check_mark:](src/main/python/ds/singly_linked_list.py) |       |            |
-  | Doubly |       | [:white_check_mark:](src/main/python/ds/doubly_linked_list.py) |       |            |
+  |        |                             Java                             |                             Python                             |  C++  | JavaScript |
+  | :----: | :----------------------------------------------------------: | :------------------------------------------------------------: | :---: | :--------: |
+  | Singly | [:white_check_mark:](src/main/java/ds/SinglyLinkedList.java) | [:white_check_mark:](src/main/python/ds/singly_linked_list.py) |       |            |
+  | Doubly |                                                              | [:white_check_mark:](src/main/python/ds/doubly_linked_list.py) |       |            |
 
 ### Useful Repositories
 

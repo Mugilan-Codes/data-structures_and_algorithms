@@ -73,6 +73,72 @@ public class SinglyLinkedList {
         sizeOfList++;
     }
 
+    // Returns the index position of the given key
+    // helper function
+    // Takes O(n) time or Linear Time
+    private int findIndex(int key) {
+        Node current = head;
+        int position = 0;
+
+        while (current != null) {
+            if (current.data == key) {
+                return position;
+            }
+
+            current = current.next;
+            position++;
+        }
+
+        return -1;
+    }
+
+    // Searches for the given key in the list.
+    // uses findIndex()
+    public void search(int key) {
+        int index = findIndex(key);
+        if (index == -1) {
+            System.out.println("Key " + key + " not found");
+        } else {
+            System.out.println("Key " + key + " found at Index: " + index);
+        }
+    }
+
+    // Returns the `Node` at specified index
+    // helper function
+    // Takes O(n) time or Linear Time
+    private Node findNodeAtIndex(int index) {
+        // safety check
+        if (index < 0 || index >= sizeOfList) {
+            return null;
+        }
+
+        if (index == 0) {
+            return head;
+        }
+
+        Node current = head;
+        int position = 0;
+
+        while (position < index) {
+            current = current.next;
+            position++;
+        }
+
+        return current;
+    }
+
+    // Find and Display the `Node` at specified index
+    // uses findNodeAtIndex()
+    public void nodeAtIndex(int index) {
+        // positive index check (or) index out of range check
+        if (index < 0 || index >= sizeOfList) {
+            System.out.println("Index must be positive and within the range of the list");
+        } else {
+            Node findNode = findNodeAtIndex(index);
+            System.out.println("The Node at index " + index + " is " + findNode);
+        }
+    }
+
     @Override
     public String toString() {
         Node current = head;
@@ -131,6 +197,15 @@ class TestSinglyLinkedList {
 
         l.addLast(5);
         l.display();
+
+        l.search(11);
+        l.search(10);
+
+        l.nodeAtIndex(-1);
+        l.nodeAtIndex(0);
+        l.nodeAtIndex(4);
+        l.nodeAtIndex(5);
+        l.nodeAtIndex(6);
 
     }
 
