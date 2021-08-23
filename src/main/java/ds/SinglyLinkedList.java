@@ -2,27 +2,6 @@ package main.java.ds;
 
 // TODO: use try catch blocks to throw exceptions
 public class SinglyLinkedList {
-    // Internal node class to represent data
-    private static class Node {
-        int data; // data of type int
-        Node next = null; // reference to the next node in the list
-
-        public Node(int data) {
-            this.data = data;
-        }
-
-        // representation of the node
-        @Override
-        public String toString() {
-            // if the node has no next node, print null
-            // final Integer integer = next != null ? next.data : null;
-            // <Node data: 10 next: 20>
-            return "<Node data: " + data + " next: " + (next != null ? next.data : null) + ">";
-            // <Node data: 10>
-            // return "<Node data: " + data + ">";
-        }
-    }
-
     private Node head; // Denotes the Head of the linked list
     private int sizeOfList = 0; // Track the size of the list for O(1) operations
 
@@ -146,34 +125,38 @@ public class SinglyLinkedList {
     public void insert(int data, int index) {
         if (index > sizeOfList || index < 0) {
             System.out.println("Invalid index");
-        } else {
-            if (index == 0) {
-                add(data);
-            } else if (index == sizeOfList) {
-                addLast(data);
-            } else {
-                Node newNode = new Node(data);
-
-                Node current = head;
-                int position = index;
-
-                // loop to find (index - 1)th `Node`
-                while (position > 1) {
-                    current = current.next;
-                    position--;
-                }
-
-                // assign previous and next nodes
-                Node prevNode = current;
-                Node nextNode = current.next;
-
-                // assign new node in between the previous and next nodes
-                prevNode.next = newNode;
-                newNode.next = nextNode;
-
-                sizeOfList++;
-            }
+            return;
         }
+
+        if (index == 0) {
+            add(data);
+            return;
+        }
+        if (index == sizeOfList) {
+            addLast(data);
+            return;
+        }
+
+        Node newNode = new Node(data);
+
+        Node current = head;
+        int position = index;
+
+        // loop to find (index - 1)th `Node`
+        while (position > 1) {
+            current = current.next;
+            position--;
+        }
+
+        // assign previous and next nodes
+        Node prevNode = current;
+        Node nextNode = current.next;
+
+        // assign new node in between the previous and next nodes
+        prevNode.next = newNode;
+        newNode.next = nextNode;
+
+        sizeOfList++;
     }
 
     // Removes `Node` at the head of the list
@@ -183,13 +166,14 @@ public class SinglyLinkedList {
             return;
         }
 
+        sizeOfList--;
         head = head.next;
     }
 
     // Removes `Node` at the tail of the list
     // Takes O(n) time or Linear Time
     public void removeLast() {
-        if(isEmpty()) {
+        if (isEmpty()) {
             return;
         }
 
@@ -200,7 +184,71 @@ public class SinglyLinkedList {
             current = current.next;
         }
 
+        sizeOfList--;
         current.next = null;
+    }
+
+    // Removes the first occurrence of the given.
+    // Returns the removed `Node` if found, null otherwise
+    // Takes O(n) time or Linear Time
+    public Node remove(int key) {
+        Node current = head;
+        Node prev = null;
+
+        while (current != null) {
+            if (current.data == key) {
+                if (current == head) {
+                    head = current.next;
+                } else {
+                    prev.next = current.next;
+                }
+
+                sizeOfList--;
+                return current;
+            }
+
+            prev = current;
+            current = current.next;
+        }
+
+        return null;
+    }
+
+    // Removes `Node` from specified index
+    // Returns the removed `Node` if found. returns null if the removed node is head or tail or if the index is out of range or list is empty.
+    // Takes O(n) time or Linear Time
+    public Node removeAtIndex(int index) {
+        if (isEmpty()) {
+            return null;
+        }
+        if (index >= sizeOfList || index < 0) {
+            return null;
+        }
+
+        if (index == 0) {
+            removeFirst();
+            return null;
+        }
+        if (index == (sizeOfList - 1)) {
+            removeLast();
+            return null;
+        }
+
+        Node current = head;
+        int position = index;
+
+        while (position > 1) {
+            current = current.next;
+            position--;
+        }
+
+        Node prev = current;
+        current = current.next; // `Node` to be removed
+
+        prev.next = current.next;
+        sizeOfList--;
+
+        return current;
     }
 
     @Override
@@ -232,6 +280,27 @@ public class SinglyLinkedList {
         }
 
         System.out.println(this); // this calls @override toString() method
+    }
+
+    // Internal node class to represent data
+    private static class Node {
+        int data; // data of type int
+        Node next = null; // reference to the next node in the list
+
+        public Node(int data) {
+            this.data = data;
+        }
+
+        // representation of the node
+        @Override
+        public String toString() {
+            // if the node has no next node, print null
+            // final Integer integer = next != null ? next.data : null;
+            // <Node data: 10 next: 20>
+            return "<Node data: " + data + " next: " + (next != null ? next.data : null) + ">";
+            // <Node data: 10>
+            // return "<Node data: " + data + ">";
+        }
     }
 }
 
@@ -284,6 +353,16 @@ class TestSinglyLinkedList {
         l.display();
 
         l.removeLast();
+        l.display();
+
+        System.out.println(l.remove(10));
+        l.display();
+        System.out.println(l.size());
+        System.out.println(l.remove(75));
+        l.display();
+        System.out.println(l.size());
+
+        System.out.println(l.removeAtIndex(1));
         l.display();
 
     }
