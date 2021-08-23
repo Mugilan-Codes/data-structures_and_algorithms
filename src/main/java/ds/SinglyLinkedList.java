@@ -1,5 +1,6 @@
 package main.java.ds;
 
+// TODO: use try catch blocks to throw exceptions
 public class SinglyLinkedList {
     // Internal node class to represent data
     private static class Node {
@@ -139,6 +140,42 @@ public class SinglyLinkedList {
         }
     }
 
+    // Inserts a new `Node` containing data at any index position
+    // uses add() or addLast() based on index
+    // Takes O(n) time or Linear Time
+    public void insert(int data, int index) {
+        if (index > sizeOfList || index < 0) {
+            System.out.println("Invalid index");
+        } else {
+            if (index == 0) {
+                add(data);
+            } else if (index == sizeOfList) {
+                addLast(data);
+            } else {
+                Node newNode = new Node(data);
+
+                Node current = head;
+                int position = index;
+
+                // loop to find (index - 1)th `Node`
+                while (position > 1) {
+                    current = current.next;
+                    position--;
+                }
+
+                // assign previous and next nodes
+                Node prevNode = current;
+                Node nextNode = current.next;
+
+                // assign new node in between the previous and next nodes
+                prevNode.next = newNode;
+                newNode.next = nextNode;
+
+                sizeOfList++;
+            }
+        }
+    }
+
     @Override
     public String toString() {
         Node current = head;
@@ -186,8 +223,6 @@ class TestSinglyLinkedList {
 
         l.add(1);
         l.add(2);
-        l.add(3);
-        l.add(4);
 
         System.out.println(l.size());
         System.out.println(l.isEmpty());
@@ -203,9 +238,20 @@ class TestSinglyLinkedList {
 
         l.nodeAtIndex(-1);
         l.nodeAtIndex(0);
+        l.nodeAtIndex(3);
         l.nodeAtIndex(4);
-        l.nodeAtIndex(5);
-        l.nodeAtIndex(6);
+
+        l.insert(4, -1);
+        l.insert(30, 0);
+        l.display();
+        l.insert(75, l.size());
+        l.display();
+
+        System.out.println(l.size());
+        l.insert(40, 6);
+        l.insert(50, 9);
+        l.display();
+        System.out.println(l.size());
 
     }
 
