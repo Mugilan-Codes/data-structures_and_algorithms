@@ -1,6 +1,7 @@
 package main.java.ds;
 
 // TODO: use try catch blocks to throw exceptions
+// TODO: adapt to use Generics
 public class SinglyLinkedList {
     private Node head; // Denotes the Head of the linked list
     private int sizeOfList = 0; // Track the size of the list for O(1) operations
