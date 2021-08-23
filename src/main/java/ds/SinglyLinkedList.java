@@ -41,6 +41,46 @@ public class SinglyLinkedList {
     public boolean isEmpty() {
         return sizeOfList == 0;
     }
+
+    // Adds new node containing data at the head of the list.
+    // Takes O(1) time or Constant Time
+    public void add(int data) {
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+        sizeOfList++;
+    }
+
+    @Override
+    public String toString() {
+        Node current = head;
+        StringBuilder printStr = new StringBuilder();
+
+        while (current != null) {
+            if (current == head) {
+                printStr.append("[Head: ").append(current.data).append("]-> ");
+            } else if (current.next == null) {
+                printStr.append("[Tail: ").append(current.data).append("]");
+            } else {
+                printStr.append("[").append(current.data).append("]-> ");
+            }
+            current = current.next;
+        }
+
+        return printStr.toString();
+    }
+
+    // Representation of the Linked List. (toString() alternative)
+    // uses toString() override internally
+    // Takes O(n) time or Linear Time
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Linked List is Empty");
+            return;
+        }
+
+        System.out.println(this); // this calls @override toString() method
+    }
 }
 
 class TestSinglyLinkedList {
@@ -51,6 +91,17 @@ class TestSinglyLinkedList {
 
         System.out.println(l.size());
         System.out.println(l.isEmpty());
+
+        l.add(1);
+        l.add(2);
+        l.add(3);
+        l.add(4);
+
+        System.out.println(l.size());
+        System.out.println(l.isEmpty());
+
+        System.out.println(l);
+        l.display();
 
     }
 
