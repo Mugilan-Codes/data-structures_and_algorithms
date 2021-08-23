@@ -176,6 +176,33 @@ public class SinglyLinkedList {
         }
     }
 
+    // Removes `Node` at the head of the list
+    // Takes O(1) time or Constant Time
+    public void removeFirst() {
+        if (isEmpty()) {
+            return;
+        }
+
+        head = head.next;
+    }
+
+    // Removes `Node` at the tail of the list
+    // Takes O(n) time or Linear Time
+    public void removeLast() {
+        if(isEmpty()) {
+            return;
+        }
+
+        Node current = head;
+
+        // loop until the next node is the tail node
+        while (current.next.next != null) {
+            current = current.next;
+        }
+
+        current.next = null;
+    }
+
     @Override
     public String toString() {
         Node current = head;
@@ -252,6 +279,12 @@ class TestSinglyLinkedList {
         l.insert(50, 9);
         l.display();
         System.out.println(l.size());
+
+        l.removeFirst();
+        l.display();
+
+        l.removeLast();
+        l.display();
 
     }
 
