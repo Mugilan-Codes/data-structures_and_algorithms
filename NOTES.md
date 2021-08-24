@@ -75,3 +75,16 @@
 - There are two types
   - Singly Linked List
   - Doubly Linked List
+
+## Language Features
+
+### Python
+
+- Module Name when import and invoked directly. [What does the if `__name__` == “`__main__`”: do?](https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/)
+
+  ```py
+  if __name__ == "__main__":
+    print("Executed when invoked directly)
+  else:
+    print("Executed when imported)
+  ```

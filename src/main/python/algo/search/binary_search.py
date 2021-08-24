@@ -27,12 +27,17 @@ def verify(index):
         print("Target not found in list")
 
 
-# TODO: values must be sorted
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers = [i for i in range(1, 11)]
+def main():
+    # TODO: values must be sorted
+    # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    numbers = [i for i in range(1, 11)]
 
-result = binary_search(numbers, 12)
-verify(result)
+    result = binary_search(numbers, 12)
+    verify(result)
 
-result = binary_search(numbers, 6)
-verify(result)
+    result = binary_search(numbers, 6)
+    verify(result)
+
+
+if __name__ == "__main__":
+    main()

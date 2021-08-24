@@ -288,4 +288,5 @@ def test_singly_linked_list():
     print(l)
 
 
-test_singly_linked_list()
+if __name__ == "__main__":
+    test_singly_linked_list()

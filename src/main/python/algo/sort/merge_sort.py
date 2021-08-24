@@ -101,11 +101,16 @@ def verify_sorted(list):
     return list[0] <= list[1] and verify_sorted(list[1:])
 
 
-a_list = [50, 43, 8, 123, 9, 4, 87, 3]
-l = merge_sort(a_list)
+def main():
+    a_list = [50, 43, 8, 123, 9, 4, 87, 3]
+    l = merge_sort(a_list)
 
-print(a_list)
-print(verify_sorted(a_list))
+    print(a_list)
+    print(verify_sorted(a_list))
 
-print(l)
-print(verify_sorted(l))
+    print(l)
+    print(verify_sorted(l))
+
+
+if __name__ == "__main__":
+    main()

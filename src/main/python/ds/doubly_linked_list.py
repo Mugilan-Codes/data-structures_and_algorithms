@@ -259,4 +259,5 @@ def test_doubly_linked_list():
     print(dl)
 
 
-test_doubly_linked_list()
+if __name__ == "__main__":
+    test_doubly_linked_list()

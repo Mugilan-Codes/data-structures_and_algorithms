@@ -22,10 +22,15 @@ def verify(result):
     print(f"Target Found: {result}")
 
 
-numbers = [i for i in range(1, 9)]
+def main():
+    numbers = [i for i in range(1, 9)]
 
-result = recursive_binary_search(numbers, 12)
-verify(result)
+    result = recursive_binary_search(numbers, 12)
+    verify(result)
 
-result = recursive_binary_search(numbers, 6)
-verify(result)
+    result = recursive_binary_search(numbers, 6)
+    verify(result)
+
+
+if __name__ == "__main__":
+    main()
