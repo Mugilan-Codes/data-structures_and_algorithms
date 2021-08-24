@@ -6,44 +6,32 @@ def merge_sort(list):
     - Conquer: Recursively sort the sublists created in previous step
     - Combine: Merge the sorted sublists created in previous step
 
-    uses split(list) and merge(left_list, right_list) as helper methods
+    uses merge(left_list, right_list)
 
     Returns a new sorted list
-    Takes Overall O(kn log n) time
+    Takes Overall O(n log n) time or Quasi-Linear Runtime or linearithmic
     """
+
+    # print(f"list = {list}")
 
     # Naively sorted when the given list is empty or with length of 1
     if len(list) <= 1:
         return list
 
-    # two sublists are returned and captured in two variables
-    left_half, right_half = split(list)
+    # split the list into smaller sub lists
 
-    # print(f"left half = {left_half}")
-    left = merge_sort(left_half)
+    mid = len(list) // 2  # floor division (//) to find the mid point
+    # print(f"mid index = {mid}")
+
+    # get left half of the list using slice
+    left = merge_sort(list[:mid])  # slicing from start to mid(exclusive)
     # print(f"left = {left}")
-    # print(f"right half = {right_half}")
-    right = merge_sort(right_half)
+
+    # get right half of the list using slice
+    right = merge_sort(list[mid:])  # slicing from mid to end
     # print(f"right = {right}")
 
     return merge(left, right)
-
-
-def split(list):
-    """
-    Divide the unsorted list at midpoint into sublists
-
-    Returns two sublists - left and right
-
-    slicing operation takes O(k) time, where k is the slized size
-    Takes Overall O(k log n) time
-    """
-
-    mid = len(list) // 2  # floor division (//) to find the mid point
-    left = list[:mid]  # slicing from start to mid(exclusive)
-    right = list[mid:]  # slicing from mid to end
-
-    return left, right
 
 
 def merge(left, right):
@@ -71,19 +59,11 @@ def merge(left, right):
             right_index += 1
             # print(f"right index = {right_index}")
 
-    # when the left list is larger than the right list. assuming the values inside the list is already sorted
-    while left_index < len(left):
-        # print(f"left = {left[left_index]} < len")
-        sorted_values.append(left[left_index])
-        left_index += 1
-        # print(f"left index = {left_index}")
-
-    # when the right list is larger than the left list. assuming the values inside the list is already sorted
-    while right_index < len(right):
-        # print(f"right = {right[right_index]} < len")
-        sorted_values.append(right[right_index])
-        right_index += 1
-        # print(f"right index = {right_index}")
+    # remaining left over values are copied over to the sorted list.
+    # assuming the values inside the list is already sorted.
+    # one of the lists is empty but no need to check which one since the empty list will add nothing.
+    sorted_values += left[left_index:]
+    sorted_values += right[right_index:]
 
     # print(f"sorted values = {sorted_values}")
     return sorted_values
