@@ -1,6 +1,9 @@
 # TODO: optimize the code to avoid using list slicing which incurs a cost in python.
 # REVIEW: Merge Sort time complexity should be O(n log n)
 # REVIEW: Implement in-place sorting?
+# REF: Merge Sort in Python - https://stackabuse.com/merge-sort-in-python/
+# REVIEW: Try Iterative Approach?
+# REF: Non-Recursive Merge Sort - https://www.baeldung.com/cs/non-recursive-merge-sort
 
 # Uncomment print statements to understand the concept more clearly
 def merge_sort(list):
@@ -14,6 +17,7 @@ def merge_sort(list):
 
     Returns a new sorted list
     Takes Overall O(kn log n) time
+    Space Complexity: O(n) or Linear
     """
 
     # Naively sorted when the given list is empty or with length of 1
@@ -66,7 +70,7 @@ def merge(left, right):
     # exit the loop when either of the indexes reaches their respective list lengths
     while left_index < len(left) and right_index < len(right):
         # print(f"left = {left[left_index]} - right = {right[right_index]}")
-        if left[left_index] < right[right_index]:
+        if left[left_index] <= right[right_index]:
             sorted_values.append(left[left_index])
             left_index += 1
             # print(f"left index = {left_index}")
@@ -94,7 +98,7 @@ def verify_sorted(list):
     # recursively check the list
     # compare the first two elements in the list
     # recursively pass sublist from the index 1 to the end of the sublist
-    return list[0] < list[1] and verify_sorted(list[1:])
+    return list[0] <= list[1] and verify_sorted(list[1:])
 
 
 a_list = [50, 43, 8, 123, 9, 4, 87, 3]
