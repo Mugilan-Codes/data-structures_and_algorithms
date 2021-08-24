@@ -25,6 +25,12 @@
   | Binary - Iterative |     [:white_check_mark:](src/main/java/algo/search/BinarySearch.java)      |      [:white_check_mark:](src/main/python/algo/search/binary_search.py)      |       |      [:white_check_mark:](src/main/javascript/algo/search/binary_search.js)      |
   | Binary - Recursive | [:white_check_mark:](src/main/java/algo/search/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/algo/search/recursive_binary_search.py) |       | [:white_check_mark:](src/main/javascript/algo/search/recursive_binary_search.js) |
 
+- ##### Sorting
+
+  |       | Java  |                            Python                             |  C++  | JavaScript |
+  | :---: | :---: | :-----------------------------------------------------------: | :---: | :--------: |
+  | Merge |       | [:white_check_mark:](src/main/python/algo/sort/merge_sort.py) |       |            |
+
 #### Data Structures
 
 - ##### Linked List

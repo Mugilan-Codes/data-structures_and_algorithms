@@ -20,18 +20,29 @@
 - `O` is the `Order of magnitude of complexity`
 - `(n)` is `A function of the size`
 
+[8 time complexities that every programmer should know](https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/)
+
 > Polynomial Runtimes (Best to Worst)
 
 - `O(1)` - Constant Time
 - `O(log n)` _(or)_ `O(ln n)` - Logarithmic (or) Sublinear Runtime
 - `O(n)` - Linear Time
-- `O(n log n)` - Quasi-Linear Runtime
+- `O(n log n)` - Quasi-Linear Runtime (or) linearithmic
 - `O(n^2)` - Quadratic Runtime
 - `O(n^3)` - Cubic Runtime
 
 > Brute force algorithm have a worst case of Exponential Runtime (_**`O(x^n)`**_)
 >
 > Travelling Salesman have a worst case of Factorial/Combinatorial Runtime (_**`O(n!)`**_)
+
+### Sorting
+
+#### Merge Sort
+
+> Works on divide & conquer strategy
+
+- Split the array into smaller single element arrays
+- Sort and merge the smaller array to build a larger array
 
 ## Data Structures
 
