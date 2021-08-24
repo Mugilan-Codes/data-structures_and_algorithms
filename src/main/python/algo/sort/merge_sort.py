@@ -1,3 +1,7 @@
+# TODO: optimize the code to avoid using list slicing which incurs a cost in python.
+# REVIEW: Merge Sort time complexity should be O(n log n)
+# REVIEW: Implement in-place sorting?
+
 # Uncomment print statements to understand the concept more clearly
 def merge_sort(list):
     """
@@ -6,32 +10,44 @@ def merge_sort(list):
     - Conquer: Recursively sort the sublists created in previous step
     - Combine: Merge the sorted sublists created in previous step
 
-    uses merge(left_list, right_list)
+    uses split(list) and merge(left_list, right_list) as helper methods
 
     Returns a new sorted list
-    Takes Overall O(n log n) time or Quasi-Linear Runtime or linearithmic
+    Takes Overall O(kn log n) time
     """
-
-    # print(f"list = {list}")
 
     # Naively sorted when the given list is empty or with length of 1
     if len(list) <= 1:
         return list
 
-    # split the list into smaller sub lists
+    # two sublists are returned and captured in two variables
+    left_half, right_half = split(list)
 
-    mid = len(list) // 2  # floor division (//) to find the mid point
-    # print(f"mid index = {mid}")
-
-    # get left half of the list using slice
-    left = merge_sort(list[:mid])  # slicing from start to mid(exclusive)
+    # print(f"left half = {left_half}")
+    left = merge_sort(left_half)
     # print(f"left = {left}")
-
-    # get right half of the list using slice
-    right = merge_sort(list[mid:])  # slicing from mid to end
+    # print(f"right half = {right_half}")
+    right = merge_sort(right_half)
     # print(f"right = {right}")
 
     return merge(left, right)
+
+
+def split(list):
+    """
+    Divide the unsorted list at midpoint into sublists
+
+    Returns two sublists - left and right
+
+    slicing operation takes O(k) time, where k is the slized size. (refer python docs)
+    Takes Overall O(k log n) time
+    """
+
+    mid = len(list) // 2  # floor division (//) to find the mid point
+    left = list[:mid]  # slicing from start to mid(exclusive)
+    right = list[mid:]  # slicing from mid to end
+
+    return left, right
 
 
 def merge(left, right):
