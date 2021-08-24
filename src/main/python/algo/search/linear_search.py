@@ -1,4 +1,6 @@
 # REF: Linear Search Implementations -  https://teamtreehouse.com/library/introduction-to-algorithms/algorithms-in-code/linear-search-implementations
+# Time Complexity - O(log n) (or) logorithmic runtime
+# Space Complexity - O(1) (or) constant space
 
 
 def linear_search(list, target):
