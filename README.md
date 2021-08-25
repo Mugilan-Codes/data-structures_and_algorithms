@@ -40,6 +40,10 @@
   | Singly | [:white_check_mark:](src/main/java/ds/SinglyLinkedList.java) | [:white_check_mark:](src/main/python/ds/singly_linked_list.py) |       |            |
   | Doubly |                                                              | [:white_check_mark:](src/main/python/ds/doubly_linked_list.py) |       |            |
 
+#### Questions
+
+- Find [First Duplicate](src/questions/FindFirstDuplicateArray) with minimal index in an array. (CodeSignal)
+
 ### Useful Repositories
 
 #### Multiple Languages
