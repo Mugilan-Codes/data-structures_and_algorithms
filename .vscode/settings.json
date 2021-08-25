@@ -17,6 +17,7 @@
   },
 
   "code-runner.executorMap": {
-    "javascript": "/Users/mugil/.nvm/versions/node/v14.16.1/bin/node"
+    "javascript": "/Users/mugil/.nvm/versions/node/v14.16.1/bin/node",
+    "python": "$pythonPath $fullFileName"
   }
 }
