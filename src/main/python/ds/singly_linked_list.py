@@ -167,7 +167,7 @@ class SinglyLinkedList:
         Takes O(n) time or Linear Time
         """
 
-        if index > self.__count:
+        if index >= self.__count:
             raise IndexError("index out of range")
 
         if index == 0:
@@ -286,6 +286,7 @@ def test_singly_linked_list():
     print(l.remove_at_index(4))
 
     print(l)
+    print(l.node_at_index(4))
 
 
 if __name__ == "__main__":
