@@ -27,9 +27,9 @@
 
 - ##### Sorting
 
-  |       | Java  |                            Python                             |  C++  | JavaScript |
-  | :---: | :---: | :-----------------------------------------------------------: | :---: | :--------: |
-  | Merge |       | [:white_check_mark:](src/main/python/algo/sort/merge_sort.py) |       |            |
+  |       | Java  |                           Python                           |  C++  | JavaScript |
+  | :---: | :---: | :--------------------------------------------------------: | :---: | :--------: |
+  | Merge |       | [:white_check_mark:](src/main/python/algo/sort/merge_sort) |       |            |
 
 #### Data Structures
 
