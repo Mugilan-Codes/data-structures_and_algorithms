@@ -167,7 +167,7 @@ class SinglyLinkedList:
         Takes O(n) time or Linear Time
         """
 
-        if index >= self.__count:
+        if index > self.__count:
             raise IndexError("index out of range")
 
         if index == 0:

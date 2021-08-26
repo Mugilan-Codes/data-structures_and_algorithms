@@ -1,8 +1,6 @@
 from ds.singly_linked_list import SinglyLinkedList
 
-# BUG: Not working
 
-# Uncomment print statements to understand the concept more clearly
 def merge_sort(linked_list):
     """
     Sorts a linked list in ascending order
@@ -16,7 +14,7 @@ def merge_sort(linked_list):
     """
 
     # naively sorted if the size of the list is 1 or empty
-    if len(linked_list) == 1:
+    if linked_list.size() == 1:
         return linked_list
     if linked_list.is_empty():
         return linked_list
@@ -44,7 +42,7 @@ def split(linked_list):
 
         return left_half, right_half
 
-    size = len(linked_list)
+    size = linked_list.size()
     mid = size // 2
     # index value starts from 0. therefore mid - 1
     mid_node = linked_list.node_at_index(mid - 1)
@@ -117,7 +115,6 @@ def merge(left, right):
 
         # move current to next node
         current = current.next_node
-        print(current)
 
     # discard fake head
     # set first merged node as head
@@ -135,9 +132,9 @@ def main():
     l.add(10)
     l.add(20)
     l.add(30)
-    # l.add(44)
-    # l.add(50)
-    # l.add(20)
+    l.add(25)
+    l.add(44)
+    l.add(50)
 
     print(l)
 
