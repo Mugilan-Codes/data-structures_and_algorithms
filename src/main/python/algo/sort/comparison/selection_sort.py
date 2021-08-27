@@ -2,6 +2,8 @@
 # sets a minimum number in the list and compares it against the list.
 # add the minimum number each time to a new list
 
+# O(n^2) time
+
 import sys
 
 from load import load_numbers

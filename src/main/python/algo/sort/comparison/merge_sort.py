@@ -1,5 +1,7 @@
 # Divide and Conquer Technique
 
+# O(n log n) time
+
 import sys
 
 from load import load_numbers

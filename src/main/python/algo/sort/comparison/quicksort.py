@@ -3,6 +3,9 @@
 # choose a pivot value from the list
 # split the list into sublist: left sublist(less than pivot) and right sublist(greater than pivot)
 
+# O(n log n) time - best case
+# O(n^2) time - worst case
+
 import sys
 
 from load import load_numbers
