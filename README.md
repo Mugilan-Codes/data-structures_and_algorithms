@@ -93,5 +93,5 @@
 
 - Repo of Friends
   - [arsan13/data-structures-algorithms](https://github.com/arsan13/data-structures-algorithms)
-  - [Shalini-2209/data-structures](https://github.com/Shalini-2209/data-structures)
+  - [Shalini-2209/data-structures-and-algorithms](https://github.com/Shalini-2209/data-structures-and-algorithms)
   - [aravinthraj98/DataStructures_And_Algo](https://github.com/aravinthraj98/DataStructures_And_Algo)
