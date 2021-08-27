@@ -1,3 +1,5 @@
+# REF: https://teamtreehouse.com/library/algorithms-sorting-and-searching/sorting-algorithms/code-for-merge-sort
+
 # Divide and Conquer Technique
 
 # O(n log n) time

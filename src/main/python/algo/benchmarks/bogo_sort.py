@@ -1,3 +1,5 @@
+# REF: https://teamtreehouse.com/library/algorithms-sorting-and-searching/sorting-algorithms/code-for-bogosort
+
 # Worst sorting algorithm
 # randomly shuffles the list until the list is sorted
 

@@ -1,3 +1,5 @@
+# REF: https://teamtreehouse.com/library/algorithms-sorting-and-searching/sorting-algorithms/code-for-selection-sort
+
 # Better than Bogo Sort
 # sets a minimum number in the list and compares it against the list.
 # add the minimum number each time to a new list

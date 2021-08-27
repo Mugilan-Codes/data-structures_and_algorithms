@@ -15,3 +15,13 @@ def load_numbers(file_name):
 # import sys
 # from load import load_numbers
 # numbers = load_numbers(sys.argv[1]) # pass in the file name in the command line
+
+
+def load_strings(file_name):
+    strings = []
+
+    with open(file_name) as f:
+        for line in f:
+            strings.append(line.rstrip())
+
+    return strings

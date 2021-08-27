@@ -1,3 +1,5 @@
+# REF: https://teamtreehouse.com/library/algorithms-sorting-and-searching/sorting-algorithms/code-for-quicksort
+
 # Better than Selection Sort and marginally faster than Merge Sort
 # Divide and Conquer Technique
 # choose a pivot value from the list
