@@ -13,6 +13,8 @@
 
 **_NOTE_**: This is how i run them
 
+---
+
 ### Index
 
 #### Algorithms
@@ -42,7 +44,12 @@
 
 #### Questions
 
-- Find [First Duplicate](src/questions/FindFirstDuplicateArray) with minimal index in an array. (CodeSignal)
+- ##### CodeSignal
+  - Find [First Duplicate](src/questions/FindFirstDuplicateArray) with minimal index in an array.
+  - [Century from Year](src/questions/CenturyFromYear)
+  - [Check Palindrome](src/questions/CheckPalindrome)
+
+---
 
 ### Useful Repositories
 
