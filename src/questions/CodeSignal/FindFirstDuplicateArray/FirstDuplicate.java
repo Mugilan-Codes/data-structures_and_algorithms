@@ -1,4 +1,4 @@
-package questions.FindFirstDuplicateArray;
+package questions.CodeSignal.FindFirstDuplicateArray;
 
 import java.util.HashSet;
 import java.util.Set;

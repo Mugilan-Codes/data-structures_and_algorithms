@@ -1,4 +1,4 @@
-package questions.CheckPalindrome;
+package questions.CodeSignal.CheckPalindrome;
 
 public class CheckPalindrome {
 

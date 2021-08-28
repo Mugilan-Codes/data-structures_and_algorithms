@@ -1,4 +1,4 @@
-package questions.CenturyFromYear;
+package questions.CodeSignal.CenturyFromYear;
 
 public class CenturyFromYear {
 

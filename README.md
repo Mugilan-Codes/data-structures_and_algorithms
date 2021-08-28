@@ -45,9 +45,12 @@
 #### Questions
 
 - ##### CodeSignal
-  - Find [First Duplicate](src/questions/FindFirstDuplicateArray) with minimal index in an array.
-  - [Century from Year](src/questions/CenturyFromYear)
-  - [Check Palindrome](src/questions/CheckPalindrome)
+
+  - Find [First Duplicate](src/questions/CodeSignal/FindFirstDuplicateArray) with minimal index in an array.
+  - [Century from Year](src/questions/CodeSignal/CenturyFromYear)
+  - [Check Palindrome](src/questions/CodeSignal/CheckPalindrome)
+  - [Adjacent Elements Product](src/questions/CodeSignal/FindAdjacentElementsProduct)
+  - [Shape Area](src/questions/CodeSignal/PolygonShapeArea) of n-interesting polygon
 
 ---
 
