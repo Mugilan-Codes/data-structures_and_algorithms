@@ -1,6 +1,6 @@
-# REF: https://teamtreehouse.com/library/algorithms-sorting-and-searching/searching-names/code-for-linear-search
+# REF: https://teamtreehouse.com/library/algorithms-sorting-and-searching/searching-names/code-for-binary-search
 
-# O(n) time
+# O(log n) time
 
 import sys
 
@@ -113,14 +113,24 @@ search_names = [
 ]
 
 
-def index_of_item(collection, target):
-    for i in range(0, len(collection)):
-        if target == collection[i]:
-            return i
+def binary_search(collections, target):
+    first = 0
+    last = len(collections) - 1
+
+    while first <= last:
+        midpoint = (first + last) // 2
+
+        if collections[midpoint] == target:
+            return midpoint
+
+        if collections[midpoint] < target:
+            first = midpoint + 1
+        else:
+            last = midpoint - 1
 
     return None
 
 
 for n in search_names:
-    index = index_of_item(names, n)
+    index = binary_search(names, n)  # the list must be sorted first
     print(index)

@@ -2,7 +2,7 @@
 
 # Better than Selection Sort and marginally faster than Merge Sort
 # Divide and Conquer Technique
-# choose a pivot value from the list
+# choose a pivot value from the list (pick at random to be at best case time)
 # split the list into sublist: left sublist(less than pivot) and right sublist(greater than pivot)
 
 # O(n log n) time - best case
