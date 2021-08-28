@@ -51,6 +51,7 @@
   - [Check Palindrome](src/questions/CodeSignal/CheckPalindrome/README.md)
   - [Adjacent Elements Product](src/questions/CodeSignal/FindAdjacentElementsProduct/README.md)
   - [Shape Area](src/questions/CodeSignal/PolygonShapeArea/README.md) of n-interesting polygon
+  - Find [First Non Repeating Character](src/questions/CodeSignal/FirstNonRepeatingCharacter/README.md) in a String
 
 ---
 
