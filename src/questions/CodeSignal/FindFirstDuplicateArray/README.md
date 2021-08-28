@@ -17,3 +17,10 @@
 - For `a = [2, 2]`, the output should be `firstDuplicate(a) = 2`.
 
 - For `a = [2, 4, 3, 5, 1]`, the output should be `firstDuplicate(a) = -1`.
+
+---
+
+##### Solutions
+
+- [Java](FirstDuplicate.java)
+- [JavaScript](firstDuplicate.js)
