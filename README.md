@@ -1,6 +1,6 @@
 # Data Structures and Algorithm Practice
 
-## Java, Python, C++, and JavaScript
+## Java, Python, and JavaScript
 
 ### Usage
 
@@ -8,7 +8,6 @@
 | :--------: | :----------------------------------------------- |
 |    Java    | `IntelliJ IDE`                                   |
 |   Python   | `CodeRunner` Extension in `VSCode`               |
-|    C++     | `CLion IDE`                                      |
 | JavaScript | `Quokka.js` / `CodeRunner` Extension in `VSCode` |
 
 **_NOTE_**: This is how i run them
@@ -21,26 +20,26 @@
 
 - ##### Searching
 
-  |                    |                                    Java                                    |                                    Python                                    |  C++  |                                    JavaScript                                    |
-  | :----------------: | :------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :---: | :------------------------------------------------------------------------------: |
-  |       Linear       |     [:white_check_mark:](src/main/java/algo/search/LinearSearch.java)      |      [:white_check_mark:](src/main/python/algo/search/linear_search.py)      |       |      [:white_check_mark:](src/main/javascript/algo/search/linear_search.js)      |
-  | Binary - Iterative |     [:white_check_mark:](src/main/java/algo/search/BinarySearch.java)      |      [:white_check_mark:](src/main/python/algo/search/binary_search.py)      |       |      [:white_check_mark:](src/main/javascript/algo/search/binary_search.js)      |
-  | Binary - Recursive | [:white_check_mark:](src/main/java/algo/search/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/algo/search/recursive_binary_search.py) |       | [:white_check_mark:](src/main/javascript/algo/search/recursive_binary_search.js) |
+  |                    |                                    Java                                    |                                    Python                                    |                                    JavaScript                                    |
+  | :----------------: | :------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+  |       Linear       |     [:white_check_mark:](src/main/java/algo/search/LinearSearch.java)      |      [:white_check_mark:](src/main/python/algo/search/linear_search.py)      |      [:white_check_mark:](src/main/javascript/algo/search/linear_search.js)      |
+  | Binary - Iterative |     [:white_check_mark:](src/main/java/algo/search/BinarySearch.java)      |      [:white_check_mark:](src/main/python/algo/search/binary_search.py)      |      [:white_check_mark:](src/main/javascript/algo/search/binary_search.js)      |
+  | Binary - Recursive | [:white_check_mark:](src/main/java/algo/search/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/algo/search/recursive_binary_search.py) | [:white_check_mark:](src/main/javascript/algo/search/recursive_binary_search.js) |
 
 - ##### Sorting
 
-  |       | Java  |                           Python                           |  C++  | JavaScript |
-  | :---: | :---: | :--------------------------------------------------------: | :---: | :--------: |
-  | Merge |       | [:white_check_mark:](src/main/python/algo/sort/merge_sort) |       |            |
+  |       | Java  |                           Python                           | JavaScript |
+  | :---: | :---: | :--------------------------------------------------------: | :--------: |
+  | Merge |       | [:white_check_mark:](src/main/python/algo/sort/merge_sort) |            |
 
 #### Data Structures
 
 - ##### Linked List
 
-  |        |                             Java                             |                             Python                             |  C++  | JavaScript |
-  | :----: | :----------------------------------------------------------: | :------------------------------------------------------------: | :---: | :--------: |
-  | Singly | [:white_check_mark:](src/main/java/ds/SinglyLinkedList.java) | [:white_check_mark:](src/main/python/ds/singly_linked_list.py) |       |            |
-  | Doubly |                                                              | [:white_check_mark:](src/main/python/ds/doubly_linked_list.py) |       |            |
+  |        |                             Java                             |                             Python                             | JavaScript |
+  | :----: | :----------------------------------------------------------: | :------------------------------------------------------------: | :--------: |
+  | Singly | [:white_check_mark:](src/main/java/ds/SinglyLinkedList.java) | [:white_check_mark:](src/main/python/ds/singly_linked_list.py) |
+  | Doubly |                                                              | [:white_check_mark:](src/main/python/ds/doubly_linked_list.py) |
 
 #### Questions
 
