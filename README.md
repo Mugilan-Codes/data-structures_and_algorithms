@@ -18,39 +18,23 @@
 
 #### Algorithms
 
-- ##### Searching
-
-  |                    |                                    Java                                    |                                    Python                                    |                                    JavaScript                                    |
-  | :----------------: | :------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-  |       Linear       |     [:white_check_mark:](src/main/java/algo/search/LinearSearch.java)      |      [:white_check_mark:](src/main/python/algo/search/linear_search.py)      |      [:white_check_mark:](src/main/javascript/algo/search/linear_search.js)      |
-  | Binary - Iterative |     [:white_check_mark:](src/main/java/algo/search/BinarySearch.java)      |      [:white_check_mark:](src/main/python/algo/search/binary_search.py)      |      [:white_check_mark:](src/main/javascript/algo/search/binary_search.js)      |
-  | Binary - Recursive | [:white_check_mark:](src/main/java/algo/search/RecursiveBinarySearch.java) | [:white_check_mark:](src/main/python/algo/search/recursive_binary_search.py) | [:white_check_mark:](src/main/javascript/algo/search/recursive_binary_search.js) |
-
-- ##### Sorting
-
-  |       | Java  |                           Python                           | JavaScript |
-  | :---: | :---: | :--------------------------------------------------------: | :--------: |
-  | Merge |       | [:white_check_mark:](src/main/python/algo/sort/merge_sort) |            |
+- [Searching](src/main/algo/search/README.md)
+- [Sorting](src/main/algo/sort/README.md)
 
 #### Data Structures
 
-- ##### Linked List
-
-  |        |                             Java                             |                             Python                             | JavaScript |
-  | :----: | :----------------------------------------------------------: | :------------------------------------------------------------: | :--------: |
-  | Singly | [:white_check_mark:](src/main/java/ds/SinglyLinkedList.java) | [:white_check_mark:](src/main/python/ds/singly_linked_list.py) |
-  | Doubly |                                                              | [:white_check_mark:](src/main/python/ds/doubly_linked_list.py) |
+- [Linked List](src/main/ds/linkedlist/README.md)
 
 #### Questions
 
 - ##### CodeSignal
 
-  - Find [First Duplicate](src/questions/CodeSignal/FindFirstDuplicateArray/README.md) with minimal index in an array.
-  - [Century from Year](src/questions/CodeSignal/CenturyFromYear/README.md)
-  - [Check Palindrome](src/questions/CodeSignal/CheckPalindrome/README.md)
-  - [Adjacent Elements Product](src/questions/CodeSignal/FindAdjacentElementsProduct/README.md)
-  - [Shape Area](src/questions/CodeSignal/PolygonShapeArea/README.md) of n-interesting polygon
-  - Find [First Non Repeating Character](src/questions/CodeSignal/FirstNonRepeatingCharacter/README.md) in a String
+  - Find [First Duplicate](src/questions/codesignal/firstduplicate/README.md) with minimal index in an array.
+  - [Century from Year](src/questions/codesignal/centuryfromyear/README.md)
+  - [Check Palindrome](src/questions/codesignal/checkpalindrome/README.md)
+  - [Adjacent Elements Product](src/questions/codesignal/adjacentelementsproduct/README.md)
+  - [Shape Area](src/questions/codesignal/polygonshapearea/README.md) of n-interesting polygon
+  - Find [First Non Repeating Character](src/questions/codesignal/firstnonrepeatingcharacter/README.md) in a String
 
 ---
 
