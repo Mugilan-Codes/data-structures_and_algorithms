@@ -4,7 +4,7 @@ public class InsertionSort {
 
     // Time Complexity: O(n^2)
     // Space Complexity: O(1)
-    public static int[] insertionSort(int[] arr) {
+    public static void insertionSort(int[] arr) {
 
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i]; // current comparison value
@@ -18,8 +18,6 @@ public class InsertionSort {
 
             arr[j + 1] = temp; // insert the temp value
         }
-
-        return arr;
 
     }
 
@@ -35,8 +33,8 @@ public class InsertionSort {
         int[] arr = {5, 2, 1, 7, 6};
         printArray(arr);
 
-        int[] result = insertionSort(arr);
-        printArray(result);
+        insertionSort(arr);
+        printArray(arr);
 
     }
 
