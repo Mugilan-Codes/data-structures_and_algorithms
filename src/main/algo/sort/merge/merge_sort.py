@@ -24,7 +24,7 @@ def merge_sort(list):
     if len(list) <= 1:
         return list
 
-    # two sublists are returned and captured in two variables
+    # two sublist are returned and captured in two variables
     left_half, right_half = split(list)
 
     # print(f"left half = {left_half}")
