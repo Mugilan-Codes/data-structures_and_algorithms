@@ -36,6 +36,10 @@
   - [Shape Area](src/questions/codesignal/polygonshapearea/README.md) of n-interesting polygon
   - Find [First Non Repeating Character](src/questions/codesignal/firstnonrepeatingcharacter/README.md) in a String
 
+- ##### LeetCode
+
+  - [977. Squares of a Sorted Array](src/questions/leetcode/e977/README.md)
+
 ---
 
 ### Useful Repositories
