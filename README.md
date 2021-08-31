@@ -38,7 +38,9 @@
 
 - ##### LeetCode
 
-  - [977. Squares of a Sorted Array](src/questions/leetcode/e977/README.md)
+  - [704. Binary Search](src/questions/leetcode/e704/README.md) (Easy)
+  - [35. Search Insert Position](src/questions/leetcode/e35/README.md) (Easy)
+  - [977. Squares of a Sorted Array](src/questions/leetcode/e977/README.md) (Easy)
 
 ---
 
