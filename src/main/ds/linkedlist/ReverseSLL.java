@@ -39,24 +39,24 @@ public class ReverseSLL {
         Node tail;
 
         head = tail = new Node(10);
+
         tail.next = new Node(20);
-
         tail = tail.next;
+
         tail.next = new Node(30);
-
         tail = tail.next;
+
         tail.next = new Node(40);
-
         tail = tail.next;
+
         tail.next = new Node(50);
-
-        tail = tail.next;
+        tail = tail.next; // no need for this
 
         HelperLLClass obj = new HelperLLClass();
 
         obj.printSLL(head);
-        Node newHead = reverse(head);
-        obj.printSLL(newHead);
+        head = reverse(head); // get updated head
+        obj.printSLL(head);
 
 
     }
