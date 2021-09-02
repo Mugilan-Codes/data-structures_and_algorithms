@@ -25,23 +25,10 @@
 
 - [Linked List](src/main/ds/linkedlist/README.md)
 
-#### Questions
+#### Practice Questions
 
-- ##### CodeSignal
-
-  - Find [First Duplicate](src/questions/codesignal/firstduplicate/README.md) with minimal index in an array.
-  - [Century from Year](src/questions/codesignal/centuryfromyear/README.md)
-  - [Check Palindrome](src/questions/codesignal/checkpalindrome/README.md)
-  - [Adjacent Elements Product](src/questions/codesignal/adjacentelementsproduct/README.md)
-  - [Shape Area](src/questions/codesignal/polygonshapearea/README.md) of n-interesting polygon
-  - Find [First Non Repeating Character](src/questions/codesignal/firstnonrepeatingcharacter/README.md) in a String
-
-- ##### LeetCode
-
-  - [704. Binary Search](src/questions/leetcode/e704/README.md) (Easy)
-  - [35. Search Insert Position](src/questions/leetcode/e35/README.md) (Easy)
-  - [977. Squares of a Sorted Array](src/questions/leetcode/e977/README.md) (Easy)
-  - [189. Rotate Array](src/questions/leetcode/m189/README.md) (Medium)
+- [CodeSignal](src/questions/codesignal/README.md)
+- [LeetCode](src/questions/leetcode/README.md)
 
 ---
 
