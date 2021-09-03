@@ -1,4 +1,4 @@
-package main.ds.linkedlist;
+package main.ds.linkedlist.singly;
 
 // Reverse Singly Linked List
 public class ReverseSLL {

@@ -1,4 +1,4 @@
-package main.ds.linkedlist;
+package main.ds.linkedlist.singly;
 
 class Node {
     int data;

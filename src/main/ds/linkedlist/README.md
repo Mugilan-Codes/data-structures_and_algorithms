@@ -2,7 +2,3 @@
 
 - [Singly Linked List](singly/README.md)
 - [Doubly Linked List](doubly/README.md)
-
-## Implementations
-
-- [Reverse a Singly Linked List](ReverseSLL.java)
