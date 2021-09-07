@@ -1,4 +1,4 @@
-package main.dp;
+package main.algo.dp;
 
 public class Fibonacci {
 

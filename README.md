@@ -20,6 +20,7 @@
 
 - [Searching](src/main/algo/search/README.md)
 - [Sorting](src/main/algo/sort/README.md)
+- [Dynamic Programming](src/main/algo/dp/README.md)
 
 #### Data Structures
 
