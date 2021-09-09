@@ -10,21 +10,24 @@
 |   Python   | `CodeRunner` Extension in `VSCode`               |
 | JavaScript | `Quokka.js` / `CodeRunner` Extension in `VSCode` |
 
-**_NOTE_**: This is how i run them
+**_NOTE_**: This is how I run them
 
 ---
 
 ### Index
+
+#### Data Structures
+
+- [Linked List](src/main/ds/linkedlist/README.md)
+- [Stack](src/main/ds/stack/README.md)
+- [Array](src/main/ds/array/README.md)
+- [Hashing](src/main/ds/hashing/README.md)
 
 #### Algorithms
 
 - [Searching](src/main/algo/search/README.md)
 - [Sorting](src/main/algo/sort/README.md)
 - [Dynamic Programming](src/main/algo/dp/README.md)
-
-#### Data Structures
-
-- [Linked List](src/main/ds/linkedlist/README.md)
 
 #### Practice Questions
 
@@ -51,10 +54,6 @@
 
 - [Pythonic Data Structures and Algorithms](https://github.com/keon/algorithms) - Minimal examples of data structures and algorithms in Python
 
-#### C++
-
-- [The Algorithms - C++](https://github.com/TheAlgorithms/C-Plus-Plus) - Collection of various algorithms in mathematics, machine learning, computer science and physics implemented in C++ for educational purposes.
-
 #### JavaScript
 
 - [JavaScript Algorithms and Data Structures](https://github.com/trekhleb/javascript-algorithms) - 📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings
@@ -70,13 +69,9 @@
 - [Awesome Algorithms](https://github.com/tayllan/awesome-algorithms) - A curated list of awesome places to learn and/or practice algorithms.
 - [Awesome Competitive Programming](https://github.com/lnishan/awesome-competitive-programming) - 💎 A curated list of awesome Competitive Programming, Algorithm and Data Structure resources
 - [SDE-Interview-Questions](https://github.com/twowaits/SDE-Interview-Questions) - Most comprehensive list 📋 of tech interview questions 📘 of companies scraped from Geeksforgeeks, CareerCup and Glassdoor.
-- [Algo Deck](https://github.com/teivah/algodeck) - An Open-Source Collection of 200+ Algorithmic Flash Cards to Help you Preparing your Algorithm & Data Structure Interview 💯
+- [Algo Deck](https://github.com/teivah/algodeck) - An Open-Source Collection of 200+ Algorithmic Flash Cards to Help you To prepare your Algorithm & Data Structure Interview 💯
 - [Algorithms explanation](https://github.com/TheAlgorithms/Algorithms-Explanation) - Popular algorithms explained in simple language with examples and links to their implementation in various programming languages and other required resources. [English](https://github.com/TheAlgorithms/Algorithms-Explanation/tree/master/en)
 - [Amazon-SDE-Test-Series](https://github.com/FazeelUsmani/Amazon-SDE-Test-Series) - Interview preparation questions for Amazon SDE role
-
----
-
-**_NOTE_**: Star the repos when extensively used
 
 ---
 
