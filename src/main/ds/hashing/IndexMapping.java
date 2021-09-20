@@ -1,7 +1,5 @@
 package main.ds.hashing;
 
-import java.util.Arrays;
-
 // Trivial Hashing with negatives allowed
 public class IndexMapping {
 
@@ -47,8 +45,6 @@ public class IndexMapping {
         isPresent(-10);
         isPresent(3);
         isPresent(9);
-
-        System.out.println(Arrays.deepToString(hash));
     }
 
 }
