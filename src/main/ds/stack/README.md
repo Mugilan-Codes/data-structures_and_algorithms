@@ -5,3 +5,4 @@
 ### Implementation
 
 - [Using Array](Stack.java)
+- [Using Linked List](StackLL.java)
