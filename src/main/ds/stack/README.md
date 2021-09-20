@@ -2,4 +2,6 @@
 
 ## Last-In First-Out
 
-- [Implementation](Stack.java)
+### Implementation
+
+- [Using Array](Stack.java)

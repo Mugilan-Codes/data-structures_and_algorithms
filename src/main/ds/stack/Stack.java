@@ -2,8 +2,8 @@ package main.ds.stack;
 
 public class Stack {
 
-    private int[] arr;
-    private int capacity;
+    private final int[] arr;
+    private final int capacity;
     private int top;
 
     Stack(int sizeOfStack) {
@@ -19,8 +19,10 @@ public class Stack {
         }
 
         System.out.println("Inserting: " + n);
-        arr[++top] = n; // increment the top pointer and store the value in that position
+        top++;
+        arr[top] = n;
     }
+    // removes last element from the stack
     public int pop() {
         if(isEmpty()) {
             System.out.println("Underflow");
@@ -38,13 +40,24 @@ public class Stack {
         return top == capacity - 1;
     }
 
-    public void peek() {}
+    // returns the last element in the stack
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is Empty");
+            return top; // -1
+        }
+        return arr[top];
+    }
 
     public void display() {
-        for (int item: arr) {
-            System.out.print(item + " ");
+        if (isEmpty()) {
+            System.out.println("Stack is Empty");
+        } else {
+            for (int i = 0; i <= top; i++) {
+                System.out.print(arr[i] + " ");
+            }
+            System.out.println();
         }
-        System.out.println();
     }
 
 }
@@ -55,6 +68,8 @@ class TestStack {
 
         System.out.println(s.isEmpty());
         System.out.println(s.isFull());
+
+        System.out.println(s.peek());
 
         s.push(10);
         s.push(20);
@@ -68,5 +83,7 @@ class TestStack {
         s.display();
         s.push(70);
         s.display();
+
+        System.out.println(s.peek());
     }
 }
