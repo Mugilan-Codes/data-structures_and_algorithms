@@ -2,6 +2,10 @@
 
 ## Java, Python, and JavaScript
 
+### TODO
+
+- Optimize Folder Structure
+
 ### Usage
 
 |  Language  | How to Run                                       |
