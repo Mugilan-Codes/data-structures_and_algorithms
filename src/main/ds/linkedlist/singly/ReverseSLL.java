@@ -4,14 +4,13 @@ package main.ds.linkedlist.singly;
 public class ReverseSLL {
 
     public static Node reverse(Node head) {
-
         if (head == null || head.next == null) {
             return head;
         }
 
         Node previousNode = null;
-        Node nextNode = null;
         Node current = head;
+        Node nextNode = null;
 
         while(current != null) {
             // System.out.println("-> current before = " + current);
@@ -30,7 +29,6 @@ public class ReverseSLL {
         }
 
         return previousNode;
-
     }
 
     public static void main(String[] args) {
@@ -55,7 +53,7 @@ public class ReverseSLL {
         HelperLLClass obj = new HelperLLClass();
 
         obj.printSLL(head);
-        head = reverse(head); // get updated head
+        head = reverse(head); // get updated head (mutation)
         obj.printSLL(head);
 
 
