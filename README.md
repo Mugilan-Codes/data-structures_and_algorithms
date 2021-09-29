@@ -33,6 +33,10 @@
 - [Sorting](src/main/algo/sort/README.md)
 - [Dynamic Programming](src/main/algo/dp/README.md)
 
+#### Others
+
+- [Maths](src/main/maths/README.md)
+
 #### Practice Questions
 
 - [CodeSignal](src/questions/codesignal/README.md)
