@@ -26,6 +26,7 @@
 - [Stack](src/main/ds/stack/README.md)
 - [Array](src/main/ds/array/README.md)
 - [Hashing](src/main/ds/hashing/README.md)
+- [Tree](src/main/ds/tree/README.md)
 
 #### Algorithms
 
