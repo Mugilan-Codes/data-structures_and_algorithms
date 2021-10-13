@@ -112,7 +112,7 @@ public class BinaryTree {
             return false;
         }
 
-        return isPerfectBinaryTree(root.left, depthOfTree, currentLevel + 1) && isPerfectBinaryTree(root.right, depthOfTree, currentLevel+1);
+        return isPerfectBinaryTree(root.left, depthOfTree, currentLevel + 1) && isPerfectBinaryTree(root.right, depthOfTree, currentLevel + 1);
     }
 
     boolean isPerfectBinaryTree(Node root) {
