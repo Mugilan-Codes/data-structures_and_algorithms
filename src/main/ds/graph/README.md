@@ -7,3 +7,7 @@
 - Two Types
   - Directed
   - Un-Directed
+
+### Implementation
+
+- DFS & BFS ([Java](Traversal.java), [JavaScript](traversal.js))
