@@ -27,6 +27,7 @@
 - [Array](src/main/ds/array/README.md)
 - [Hashing](src/main/ds/hashing/README.md)
 - [Tree](src/main/ds/tree/README.md)
+- [Graph](src/main/ds/graph/README.md)
 
 #### Algorithms
 
@@ -71,7 +72,7 @@
 - [Learning JavaScript Data Structures and Algorithms](https://github.com/loiane/javascript-datastructures-algorithms) - 📚 collection of JavaScript and TypeScript data structures and algorithms for education purposes. Source code bundle of JavaScript algorithms and data structures book
 - [Javascript Algorithms And Data Structures](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures)
 
-#### Others
+#### Other Repos
 
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university) - A complete computer science study plan to become a software engineer.
 - [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) - 🎆 Interactive Online Platform that Visualizes Algorithms from Code
