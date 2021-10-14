@@ -7,7 +7,7 @@ const hasPathBF = (graph, source, dest) => {
 
     if (current === dest) return true;
 
-    for (let neighbor of graph[source]) {
+    for (let neighbor of graph[current]) {
       queue.push(neighbor);
     }
   }

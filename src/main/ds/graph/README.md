@@ -19,4 +19,4 @@
 ### Implementation
 
 - DFS & BFS ([Java](Traversal.java), [JavaScript](traversal.js))
-- Has Path ([JavaScript](hasPath.js))
+- Has Path ([Java](HasPath.java), [JavaScript](hasPath.js))
