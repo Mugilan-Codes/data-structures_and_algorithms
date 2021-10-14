@@ -8,6 +8,15 @@
   - Directed
   - Un-Directed
 
+- Traversal types
+  - Depth First (uses Stack)
+  - Breadth First (uses Queue)
+
+- A Graph can be
+  - Cyclic (creates infinite loop on traversal)
+  - Acyclic (no cycles)
+
 ### Implementation
 
 - DFS & BFS ([Java](Traversal.java), [JavaScript](traversal.js))
+- Has Path ([JavaScript](hasPath.js))
