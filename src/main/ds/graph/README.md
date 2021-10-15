@@ -20,3 +20,4 @@
 
 - DFS & BFS ([Java](Traversal.java), [JavaScript](traversal.js))
 - Has Path ([Java](HasPath.java), [JavaScript](hasPath.js))
+- Undirected Path in Un-Directed Graph ([JavaScript](undirectedPath.js))
